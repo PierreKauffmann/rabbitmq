@@ -17,23 +17,11 @@
   "license": "Apache-2.0",
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
-  "author": "Gareth Jones <gareth.nomiddlename@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/log4js-node/rabbitmq.git"
-  },
-  "bugs": {
-    "url": "http://github.com/log4js-node/rabbitmq/issues"
-  },
+  "author": "Gareth Jones <gareth.nomiddlename@gmail.com>, Pierre Kauffmann <pierre@faibrik.com>",
   "engines": {
     "node": ">=6.0"
   },
   "scripts": {
-    "prepush": "npm test",
-    "commitmsg": "validate-commit-msg",
-    "pretest": "eslint 'lib/**/*.js' 'test/**/*.js'",
-    "test": "tap 'test/tap/**/*.js' --100",
-    "codecov": "tap 'test/tap/**/*.js' --cov --coverage-report=lcov && codecov"
   },
   "directories": {
     "test": "test",
@@ -45,35 +33,5 @@
   },
   "browser": {
     "os": false
-  },
-  "config": {
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "example",
-        "perf",
-        "test",
-        "chore",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 72,
-      "subjectPattern": ".+",
-      "subjectPatternErrorMsg": "subject does not match subject pattern!",
-      "helpMessage": "\n# allowed type: feat, fix, docs, style, refactor, example, perf, test, chore, revert\n# subject no more than 50 chars\n# a body line no more than 72 chars"
-    }
-  },
-  "nyc": {
-    "all": true,
-    "include": [
-      "lib/**/*.js"
-    ],
-    "require": [
-      "./test/sandbox-coverage"
-    ]
   }
 }
