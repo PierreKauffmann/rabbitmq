@@ -10,7 +10,7 @@ If you want to be sure that all messages have been sent before your programme ex
 
 ## Configuration
 
-* `type` - `@log4js-ndoe/rabbitmq`
+* `type` - `@log4js-node/rabbitmq`
 * `host` - `string` (optional, defaults to `127.0.0.1`) - the location of the rabbitmq server
 * `port` - `integer` (optional, defaults to `5672`) - the port the rabbitmq server is listening on
 * `username` - `string` (optional, defaults to `guest`) - username to use when authenticating connection to rabbitmq
